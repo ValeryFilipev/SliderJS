@@ -1,0 +1,44 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider. Exam. JS</title>
+    <link rel="stylesheet" href="slider.css">
+  </head>
+  <body>
+    <div id="sl-popup-bg"></div>
+    <div id="sl-popup">
+      <div id="slider">
+        <div id="slider-wrapper">
+          <div class="slide">
+            <img src="slide/example-slide-1.jpg" alt=""/>
+          </div>
+          <div class="slide">
+            <img src="slide/example-slide-2.jpg" alt=""/>
+          </div>
+          <div class="slide">
+            <img src="slide/example-slide-3.jpg" alt=""/>
+          </div>
+          <div class="slide">
+            <img src="slide/example-slide-4.jpg" alt=""/>
+          </div>
+        </div>
+        <div id="slider-nav">
+          <a href="#" data-slide="0" class="current"></a>
+          <a href="#" data-slide="1"></a>
+          <a href="#" data-slide="2"></a>
+          <a href="#" data-slide="3"></a>
+        </div>
+        <a href="#" class="hor-controls" id="prev"></a>
+        <a href="#" class="hor-controls" id="next"></a>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+    <script>
+        var aSlider = new Slider("#slider");
+    </script>
+  </body>
+</html>
